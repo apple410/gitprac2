@@ -11,7 +11,7 @@ const Page = () => {
         const res = await fetch('/api/display');
         const result = await res.json();
 
-        setData(Array.isArray(result) ? result : [result]);
+        setData(result.datas);
       } catch (error) {
         console.error('Failed to fetch data:', error);
       }
