@@ -8,7 +8,7 @@ const Page = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch('/api/user');
+        const res = await fetch('/api/display');
         const result = await res.json();
 
         setData(Array.isArray(result) ? result : [result]);
