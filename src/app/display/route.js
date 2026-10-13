@@ -23,5 +23,5 @@ const datas = [
 ];
 
 export function GET(request) {
-  return NextResponse.json({ datas });
+  return NextResponse.json({ datas, message: "success", status: 200 });
 }
